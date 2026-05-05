@@ -1,4 +1,3 @@
-
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
@@ -188,6 +187,4 @@ if 'flow_df' in st.session_state and 'gex_result' in st.session_state:
     st.dataframe(signals_df[['SYM','Type','Sentiment','Premium','Confluence Score']], use_container_width=True)
     top = signals_df.iloc[0]
     st.success(f"⚡ Top Signal: **{top['SYM']} {top['Type']}** | Score {top['Confluence Score']} | {top['Sentiment']} | Premium: {top['Premium']}")
-```
 
----
